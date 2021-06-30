@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="nabarx">
+      <h1>NotePad</h1>
+    </div>
+    <Header/>
+    <h1 class="footer"> Developed By <a href="https://www.linkedin.com/in/ragul-rajkumar-4b7246195/" target="_blank">Ragul Rajkumar</a></h1>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
+  },
+  methods:{
   }
 }
 </script>
@@ -22,7 +26,20 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+}
+.nabarx{
+  background-color: #2c3e50;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+}
+.heading{
+  font-size: 20px;
+  align-items: center;
+}
+.footer{
+  color: black;
+  font-size: 20px;
 }
 </style>
