@@ -3,19 +3,17 @@
     <div class="nabarx">
       <h1>NotePad</h1>
     </div>
-    <Header/>
+    <Notepad />
     <h1 class="footer"> Developed By <a href="https://www.linkedin.com/in/ragul-rajkumar-4b7246195/" target="_blank">Ragul Rajkumar</a></h1>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Notepad from './components/Notepad.vue'
 export default {
   name: 'App',
   components: {
-    Header
-  },
-  methods:{
+    Notepad
   }
 }
 </script>
